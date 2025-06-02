@@ -276,10 +276,10 @@ group_output() {
         {genre="unsorted"}
         $0~"BrewDog|Lowlander|Paulaner|Two Chefs|Vandestreek"{genre="beer"}
         $2~"Arla|Campina|Halfvolle|Optimel|Karnemelk"{genre="milk"}
-        $0~"Appel|Bleekselderij|Gember|Granny Smith|Limoenen|appeltjes|sinaasappelen|[Bb]ananen|Wortelen|Peren"{genre="fruit"}
-        $0~"Allioli|Augurk|Avocado|Bona|Johma|Komkommer|Lotus|Rucola|Sriracha|boter|confiture| jam|[Mm]ayonaise|sla| spread|stroop|tomaten|zeezout"{genre="condiment"}
-        $0~"Achterham|Chorizo|Grill|[Kk]ipfilet|Salami|gehakt|worst|beenham| ham| spek| zalm"{genre="meat"}
-        $0~"Apekoppen|Cashew|Donuts|Katjang|Lay'\''s|Rijstwafels|gevulde koeken|kano'\''s|nootjes|wafels"{genre="snacks"}
+        $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Wortelen"{genre="fruit"}
+        $0~"Allioli|Augurk|Avocado|Bona|Johma|Komkommer|[Mm]ayonaise| augurken|uien|Lotus|Rucola|Sriracha|Vlokfeest|boter|confiture| augurken| jam|sla| spread|stroop|tomaten| uien|zeezout"{genre="condiment"}
+        $0~"[Aa]chterham|Chorizo|Grill|[Kk]ipfilet|Salami|gehakt|worst|beenham| ham| spek| zalm"{genre="meat"}
+        $0~"Apekoppen|Cashew|Donuts|Katjang|Lay'\''s|Rijstwafels|[Bb]orrelno|[Bb]oterkoek|chocolade|gevulde koeken|kano'\''s|nootjes|wafels"{genre="snacks"}
         $0~"Beemster|Goudse|Old Amsterdam|Rotterdamsche| brie"{genre="cheese"}
         $0~"Clipper|Coca|Mineraalwater|Rooibos|Simon L|koffiemelk| tea"{genre="drinks"}
         {print genre " " $0}
