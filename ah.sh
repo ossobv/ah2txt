@@ -277,8 +277,8 @@ group_output() {
         $0~"BrewDog|Lowlander|Paulaner|Two Chefs|Vandestreek"{genre="beer"}
         $2~"Arla|Campina|Halfvolle|Optimel|Karnemelk"{genre="milk"}
         $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Wortelen"{genre="fruit"}
-        $0~"Allioli|Augurk|Avocado|Bona|Johma|Komkommer|[Mm]ayonaise| augurken|uien|Lotus|Rucola|Sriracha|Vlokfeest|boter|confiture| augurken| jam|sla| spread|stroop|tomaten| uien|zeezout"{genre="condiment"}
-        $0~"[Aa]chterham|Chorizo|Grill|[Kk]ipfilet|Salami|gehakt|worst|beenham| ham| spek| zalm"{genre="meat"}
+        $0~"Allioli|Augurk|Avocado|Bona|Johma|Komkommer|[Mm]ayonaise| augurken|uien|Lotus|Rucola|Sriracha|Vlokfeest|boter|confiture| augurken| jam|pindakaas|sla| spread|stroop|tomaten| uien|zeezout"{genre="condiment"}
+        $0~"[Aa]chterham|Chorizo|Grill|[Kk]ipfilet|Salam[ei]|gehakt|worst|beenham| ham| spek| zalm"{genre="meat"}
         $0~"Apekoppen|Cashew|Donuts|Katjang|Lay'\''s|Rijstwafels|[Bb]orrelno|[Bb]oterkoek|chocolade|gevulde koeken|kano'\''s|nootjes|wafels"{genre="snacks"}
         $0~"Beemster|Goudse|Old Amsterdam|Rotterdamsche| brie"{genre="cheese"}
         $0~"Clipper|Coca|Mineraalwater|Rooibos|Simon L|koffiemelk| tea"{genre="drinks"}
