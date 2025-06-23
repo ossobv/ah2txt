@@ -277,14 +277,15 @@ group_output() {
     prev_genre=
     awk '
         {genre="unsorted"}
-        $0~"BrewDog|Lowlander|Paulaner|Two Chefs|Vandestreek"{genre="beer"}
+        $0~"BrewDog|Corona|De Eeuwige Jeugd|Lowlander|Paulaner|Two Chefs|Vandestreek"{genre="beer"}
         $2~"Arla|Campina|Halfvolle|Optimel|Karnemelk"{genre="milk"}
         $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Wortelen"{genre="fruit"}
         $0~"Allioli|Augurk| augurken| augurken|Avocado|Bona|boter|confiture| jam|Johma|Komkommer|Lotus|[Mm]ayonaise|pindakaas|Rucola|sla| spread|Sriracha|stroop|tomaten| uien|uien|Vlokfeest|zeezout"{genre="condiment"}
-        $0~"[Aa]chterham|beenham|Chorizo|gehakt|Grill| ham|[Kk]ipfilet|Salam[ei]| spek|worst| zalm"{genre="meat"}
-        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Donuts|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes|Rijstwafels|wafels"{genre="snacks"}
+        $0~"[Aa]chterham|beenham|Chorizo|Eieren|gehakt|Grill| ham|[Kk]ipfilet|Salam[ei]| spek|Tonijn|worst| zalm"{genre="meat"}
+        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes|Rijstwafels|wafels"{genre="snacks"}
         $0~"Beemster| brie|Goudse|Old Amsterdam|Rotterdamsche"{genre="cheese"}
-        $0~"Clipper|Coca|koffiemelk|Mineraalwater|Rooibos|Simon L| tea"{genre="drinks"}
+        $0~"Celestial|Clipper|Coca|Ginger beer|koffiemelk|Mineraalwater|Rooibos|Simon L| tea"{genre="drinks"}
+        $0~"azijn"{genre="other"}
         {print genre " " $0}
     ' | sort -k1,1 -k3 | while read genre count rest; do
         if test "$genre" != "$prev_genre"; then
