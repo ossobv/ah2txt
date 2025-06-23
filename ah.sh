@@ -267,6 +267,9 @@ sanitize_output() {
         s/ AH / /g
         s/ Biologische\? / /
         s/ Fairtrade / /
+
+        # GNU sed, replace first char with uppercase
+        s/[A-Za-z]/\U&/
     ' | sort -k2
 }
 
