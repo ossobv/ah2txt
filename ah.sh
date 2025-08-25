@@ -170,7 +170,7 @@ Lowlander Non-Alcoholic IPA 	10 	2.49 	24.90
 Old Amsterdam Original 8 plakken 	1 	4.99 	4.99
 Simon Lévelt Peruvian opal bonen 	2 	9.99 	19.98
 Zespri Zespri kiwi sungold 	1 	5.99 	5.99
-Gratis toegevoegd 	
+Gratis toegevoegd
 Nightwatch 100% plant enrgie B2B 	2 	  	0.00
 Boodschappen totaal 			233.25
 Bonusvoordeel
@@ -277,12 +277,12 @@ group_output() {
     prev_genre=
     awk '
         {genre="unsorted"}
-        $0~"BrewDog|Corona|De Eeuwige Jeugd|Lowlander|Paulaner|Two Chefs|Vandestreek"{genre="beer"}
+        $0~"BrewDog|Corona|De Eeuwige Jeugd|Desperados|Lowlander|Paulaner|Two Chefs|Uiltje|Vandestreek"{genre="beer"}
         $2~"Arla|Campina|Halfvolle|Optimel|Karnemelk"{genre="milk"}
-        $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Wortelen"{genre="fruit"}
-        $0~"Allioli|Augurk| augurken| augurken|Avocado|Bona|boter|confiture| jam|Johma|Komkommer|Lotus|[Mm]ayonaise|pindakaas|Rucola|sla| spread|Sriracha|stroop|tomaten| uien|uien|Vlokfeest|zeezout"{genre="condiment"}
-        $0~"[Aa]chterham|beenham|Chorizo|Eieren|gehakt|Grill| ham|[Kk]ipfilet|Salam[ei]| spek|Tonijn|worst| zalm"{genre="meat"}
-        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes|Rijstwafels|wafels"{genre="snacks"}
+        $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|[Bb]ramen|frambozen|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Wortelen"{genre="fruit"}
+        $0~"Allioli|Augurk| augurken| augurken|Avocado|Bona|boter|confiture|[Hh]oemoes|[Hh]ummus| jam|Johma|Komkommer|Lotus|[Mm]ayonaise|pindakaas|Rucola|[Ss]la| spread|Sriracha|stroop|tomaten| uien|uien|Vlokfeest|zeezout"{genre="condiment"}
+        $0~"[Aa]chterham|americain|beenham|Chorizo|Eieren|gehakt|Grill| ham|[Kk]ipfilet|Salam[ei]| spek|Tonijn|worst| zalm"{genre="meat"}
+        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|Gangmakers|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes|noten|Rijstwafels|wafels"{genre="snacks"}
         $0~"Beemster| brie|Goudse|Old Amsterdam|Rotterdamsche"{genre="cheese"}
         $0~"Celestial|Clipper|Coca|Ginger beer|koffiemelk|Mineraalwater|Rooibos|Simon L| tea"{genre="drinks"}
         $0~"azijn"{genre="other"}
