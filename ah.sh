@@ -279,10 +279,10 @@ group_output() {
         {genre="unsorted"}
         $0~"BrewDog|Corona|De Eeuwige Jeugd|Desperados|Hertog Jan|Jopen|Lowlander|Paulaner|Two Chefs|Uiltje|Vandestreek"{genre="beer"}
         $2~"Arla|Campina|Halfvolle|Optimel|Karnemelk"{genre="milk"}
-        $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|[Bb]ramen|druiven |frambozen|Gember|Granny Smith|Limoenen|Peren|[Pp]erziken|sinaasappelen|Snoepgroente|Wortelen"{genre="fruit"}
-        $0~"Allioli|Augurk| augurken| augurken|Avocado|Bona|boter|confiture|[Cc]up-a-soup|[Hh]oemoes|[Hh]ummus| jam|Johma|[Kk]imchi|Komkommer|Leverpastei|Lotus|[Mm]ayonaise| mosterd|pindakaas|Rucola|[Ss]la| spread|Sriracha|stroop|tomaten| uien|uien|Vlokfeest|zeezout"{genre="condiment"}
+        $0~"[Aa]ppel|[Bb]ananen|Bleekselderij|[Bb]ramen|druiven |frambozen|Gember|Granny Smith|Limoenen|[Mm]andarijnen|Peren|[Pp]erziken|sinaasappelen|Snoepgroente|Wortelen"{genre="fruit"}
+        $0~"Allioli|Augurk| augurken| augurken|Avocado|Bona|boter|confiture|[Cc]up-a-soup|[Hh]oemoes|[Hh]ummus| jam|Johma| ketchup|[Kk]imchi|Komkommer|Leverpastei|Lotus|[Mm]ayonaise| mosterd|pindakaas|Rucola|[Ss]la| spread|Sriracha|stroop|tomaten| uien|uien|Vlokfeest|zeezout"{genre="condiment"}
         $0~"[Aa]chterham|americain|beenham|Chorizo|Eieren|gehakt|Grill| ham|[Kk]ipfilet|Salam[ei]| spek|Tonijn|worst| zalm"{genre="meat"}
-        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|Gangmakers|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes| noten|Rijstwafels|wafels"{genre="snacks"}
+        $0~"Apekoppen|[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|Gangmakers|gevulde koeken|kano'\''s|Katjang|Lay'\''s|nootjes| noten|Rijstwafels|[Rr]oomboter |Speculoos koek|wafels"{genre="snacks"}
         $0~"Beemster| brie|Goudse|Old Amsterdam|Rotterdamsche"{genre="cheese"}
         $0~"Belvoir Ginger|Celestial|Clipper|Coca|Ginger beer|koffiemelk|Mineraalwater|Rooibos|Simon L| tea"{genre="drinks"}
         $0~"azijn"{genre="other"}
