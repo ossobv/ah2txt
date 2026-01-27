@@ -284,7 +284,7 @@ group_output() {
         $0~"[Aa]chterham|americain|beenham|Chorizo|[Ee]ieren|gehakt|Grill| ham|[Kk]alkoenfilet|[Kk]ipfilet|Salam[ei]|Serrano| spek|Tonijn|worst| zalm"{genre="meat"}
         $0~"[Bb]orrelno|[Bb]oterkoek|Cashew|chocolade|Cornetto|Donuts|Doritos|Gangmakers|gevulde koeken|kano'\''s|Katja |Katjang|Lay'\''s|nootjes| noten|Rijstwafels|[Rr]oomboter |Speculoos koek|wafels"{genre="snacks"}
         $0~"Beemster| brie|Goudse|Old Amsterdam|Rotterdamsche"{genre="cheese"}
-        $0~"Belvoir Ginger|Celestial|Clipper|Coca|Ginger beer|koffiemelk|Mineraalwater|Rooibos|Simon L|[Ss]uikerklontjes| tea"{genre="drinks"}
+        $0~"Belvoir Ginger|Celestial|Clipper|Coca|Ginger beer|koffiemelk|Mineraalwater|Red Bull|Rooibos|Simon L|[Ss]uikerklontjes| tea"{genre="drinks"}
         $0~"azijn"{genre="other"}
         {print genre " " $0}
     ' | sort -k1,1 -k3 | while read genre count rest; do
